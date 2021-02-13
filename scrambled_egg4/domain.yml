@@ -1,0 +1,50 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- ask_ingredients
+- ask_first_step
+- ask_frying_pan
+- ask_stirring
+- ask_ending_serving
+- affirm
+
+actions:
+ - action_custom_fallback
+
+responses:
+  utter_greet:
+  - text: Welcome! How do you do?
+  utter_start_question:
+  - text: "I can help you by making scrambled eggs.\n Where have you been stuck? \n\
+      \ Ingredients?\n First steps?\n  Using frying pan?\n How frequent do you have\
+      \ to stir?\n How long stirring does it need?\n how do you serve it? "
+  utter_ingredients:
+  - text: "Ingredients:\n 2 large free range eggs\n 6 tbsp single cream or full cream\
+      \ milk\n a knob of butter"
+  utter_first_step:
+  - text: Lightly whisk 2 large eggs, 6 tbsp single cream or full cream milk and a
+      pinch of salt together until the mixture has just one consistency.
+  utter_frying_pan:
+  - text: "Heat a small non-stick frying pan for a minute or so, then add a knob of\
+      \ butter and let it melt.\n Don’t allow the butter to brown or it will discolour\
+      \ the eggs. "
+  utter_stirring:
+  - text: "Pour in the egg mixture and let it sit, without stirring, for 20 seconds.\n\
+      \ Stir with a wooden spoon, lifting and folding it over from the bottom of the\
+      \ pan.\n Let it sit for another 10 seconds then stir and fold again."
+  utter_ending_serving:
+  - text: "Repeat until the eggs are softly set and slightly runny in places.\n Remove\
+      \ from the heat and leave for a moment to finish cooking.\n Give a final stir\
+      \ and serve the velvety scramble without delay."
+  utter_ask_ok:
+  - text: is it ok?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_default:
+  - text: "I can't understand You. Try again!" 

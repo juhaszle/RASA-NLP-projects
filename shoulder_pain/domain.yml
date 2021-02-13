@@ -1,0 +1,274 @@
+---  
+actions: 
+  - utter_greet
+  - utter_goodbye
+intents: 
+  - greet
+  - bye
+slots:
+  describe_pain: 
+   auto_fill: false
+   type: unfeaturized
+  severe_pain: 
+   auto_fill: false
+   type: unfeaturized
+  drop: 
+   auto_fill: false
+   type: unfeaturized
+  sleeping: 
+   auto_fill: false
+   type: unfeaturized
+  lifting: 
+   auto_fill: false
+   type: unfeaturized
+  reaching_out: 
+   auto_fill: false
+   type: unfeaturized
+  throwing: 
+   auto_fill: false
+   type: unfeaturized
+  work: 
+   auto_fill: false
+   type: unfeaturized
+  sport: 
+   auto_fill: false
+   type: unfeaturized  
+  increase_pain:
+   auto_fill: false
+   type: unfeaturized
+  pain_arm:
+   auto_fill: false
+   type: unfeaturized      
+  pain_night:
+   auto_fill: false
+   type: unfeaturized      
+  clicking: 
+   auto_fill: false
+   type: unfeaturized
+  shoulder_weakness: 
+   auto_fill: false
+   type: unfeaturized
+  arm_weakness: 
+   auto_fill: false
+   type: unfeaturized
+  numbness:
+   auto_fill: false
+   type: unfeaturized      
+  stiffness:
+   auto_fill: false
+   type: unfeaturized      
+  neck:
+   auto_fill: false
+   type: unfeaturized
+  other_symptoms:
+   auto_fill: false
+   type: unfeaturized
+
+
+
+
+
+forms: 
+  - survey_form
+templates: 
+  utter_ask_drop: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Have you dropped items due to a shoulder condition?"
+  utter_greet: 
+    - 
+      text: "Hey! I am Survey Bot,Please answer the following questions to proceed the survey"
+  utter_ask_sleeping: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Sleeping on the affected shoulder."
+  utter_ask_lifting: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Lifting your arm overhead."
+  utter_ask_reaching_out: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Reaching out from your side."
+        
+  utter_ask_throwing: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Throwing motion."
+  
+  utter_ask_sport: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Participating in sports."
+          
+  utter_ask_work: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "Minimally"
+          title: "Minimally"
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do the following increase your pain?\n - Work activities."
+
+  utter_ask_pain_arm: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Does the pain move down your arm or up into your neck?"
+
+  utter_ask_pain_night: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have shoulder pain at night?"
+    
+
+
+  utter_ask_clicking: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        
+        - 
+          payload: "No"
+          title: "No"
+      text: "Do you have any of the following symptoms?\n - Clicking, popping, or grinding in your shoulder."
+
+
+
+  utter_ask_shoulder_weakness: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have any of the following symptoms?\n - Weakness of your shoulder"
+        
+  utter_ask_arm_weakness: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have any of the following symptoms?\n - Weakness of your arm, elbow or hand."
+
+
+  utter_ask_numbness: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have any of the following symptoms?\n - Numbness or tingling in your arm or hand."
+
+  utter_ask_stiffness: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have any of the following symptoms?\n - Stiffness of your shoulder."
+          
+  utter_ask_neck: 
+    - 
+      buttons: 
+        - 
+          payload: "Yes"
+          title: "Yes"
+        - 
+          payload: "NO"
+          title: "NO"
+      text: "Do you have any of the following symptoms?\n - Persistent or recurrent neck pain."
+
+      
+  utter_ask_other_symptoms: 
+    - text: "Are there any other symptoms regarding your shoulder that we should know about?"
+  utter_ask_describe_pain: 
+    - text: "How do you describe your pain?"
+  utter_ask_severe_pain: 
+    - text: "How severe is it? (1-10 scale)"
+  utter_ask_increase_pain:
+    - text: "Is there anything else that increases your pain?"      
+  utter_goodbye:
+    - text: "Bye"
+    
